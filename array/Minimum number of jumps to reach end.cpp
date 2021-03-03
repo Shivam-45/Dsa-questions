@@ -16,7 +16,7 @@ int main ()
     /*
     jump is to count the jumps.
     step will take the maximum step it can take.
-    maxReach is max reach from starting.
+    maxReach is max reach from i.
     */
 
     int jump=1,step=arr[0],maxR=arr[0];
@@ -24,13 +24,6 @@ int main ()
     else if (arr[0]==0) { cout<<"-1"; return 0;}
     else
     {
-    /*
-        when we reach end of array return jump.
-        max reach is maximum of arr[i]+i,maxR.
-        step will decrease.
-
-        at last step = max reach - i.
-    */
         for (int i=1;i<n;i++)
         {
             if(i==n-1){ cout<<jump<<" "; return 0;}
